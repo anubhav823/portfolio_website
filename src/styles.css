@@ -1,0 +1,68 @@
+body {
+    font-family: sans-serif;
+    background-image: linear-gradient(170deg, rgb(21, 3, 100), rgb(133, 1, 111, 0.842));
+    color: white;
+    width: 100%;
+    height: 100vh;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+    margin: 10px;
+}
+
+.navbar_li {
+    display: inline;
+    padding: 16px 14px;
+    float: right;
+}
+
+#nav-bar {
+    display: flex;
+    text-decoration: none;
+    /* align-items: right; */
+    /* background-color: aquamarine; */
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.content {
+    padding: 30px;
+    height: 100px;
+    /* background-color: blueviolet; */
+}
+
+#hey {
+    font-size: 30px;
+    font-weight: bolder;
+    margin: 0;
+    width: fit-content;
+    /* background-color: rgb(240, 245, 255); */
+}
+
+#name {
+    font-size: 25px;
+    font-weight: bold;
+    margin: 0;
+    width: fit-content;
+    /* background-color: aqua; */
+}
+
+#occupation {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0;
+    width: fit-content;
+    /* background-color: aliceblue; */
+}
+
+#skills {
+    /* display: flex; */
+    /* align-items: center; */
+    text-align: center;
+}
