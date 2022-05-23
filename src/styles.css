@@ -1,13 +1,24 @@
+html {
+    min-height: 100%;
+    background-attachment: fixed;
+    background-image: linear-gradient(to bottom right, rgb(21, 3, 100), rgb(133, 1, 111, 0.842));
+    scroll-behavior: smooth;
+}
+
 body {
-    font-family: sans-serif;
-    background-image: linear-gradient(170deg, rgb(21, 3, 100), rgb(133, 1, 111, 0.842));
+    font-family: 'Poppins';
     color: white;
-    width: 100%;
     height: 100vh;
+}
+
+#root {
+    align-items: center;
+    margin: auto;
 }
 
 a {
     text-decoration: none;
+    color: white;
 }
 
 ul {
@@ -15,54 +26,114 @@ ul {
     margin: 10px;
 }
 
+a {
+    transition: transform .5s;
+}
+
+#about_me {
+    width: 50%;
+    position: relative;
+    margin: auto;
+    top: 100px;
+}
+
 .navbar_li {
     display: inline;
     padding: 16px 14px;
     float: right;
+    font-weight: bold;
+    margin: 5px;
+    font-size: large;
+    transition: transform .5s;
 }
 
-#nav-bar {
-    display: flex;
-    text-decoration: none;
-    /* align-items: right; */
-    /* background-color: aquamarine; */
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
+.navbar_li:hover {
+    transform: scale(1.2);
+}
+
+#project_intro {
+    position: relative;
+    top: 100px;
+    width: 50%;
+    margin: auto;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+#projects {
+    margin: 20px;
 }
 
 .content {
     padding: 30px;
     height: 100px;
-    /* background-color: blueviolet; */
 }
 
 #hey {
     font-size: 30px;
     font-weight: bolder;
-    margin: 0;
     width: fit-content;
-    /* background-color: rgb(240, 245, 255); */
 }
 
 #name {
-    font-size: 25px;
+    font-size: 50px;
     font-weight: bold;
-    margin: 0;
     width: fit-content;
-    /* background-color: aqua; */
+    text-shadow: 3px 3px rgba(255, 0, 0, 0.774);
 }
 
 #occupation {
-    font-size: 20px;
+    font-size: 30px;
     font-weight: bold;
-    margin: 0;
     width: fit-content;
-    /* background-color: aliceblue; */
 }
 
-#skills {
-    /* display: flex; */
-    /* align-items: center; */
-    text-align: center;
+#more_details {
+    background-color: rgb(255, 153, 0);
+    width: 50%;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 30px 15px rgba(219, 4, 4, 0.4);
+    margin: auto;
+    position: relative;
+    top: 100px;
+}
+
+.project {
+    background-color: rgb(255, 153, 0);
+    width: 50%;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 30px 15px rgba(219, 4, 4, 0.4);
+    margin: auto;
+    position: relative;
+    top: 100px;
+    display: block;
+}
+
+.about_project {
+    display: flex;
+}
+
+#contact_me {
+    width: 50%;
+    position: relative;
+    margin: auto;
+    top: 50px;
+}
+
+.contact_me_li {
+    display: inline;
+    padding: 16px 14px;
+    transition: transform .5s;
+}
+
+.contact_me_li img {
+    display: inline;
+    padding: 16px 14px;
+    transition: transform .5s;
+}
+
+.contact_me_li img:hover {
+    transform: scale(1.2);
 }

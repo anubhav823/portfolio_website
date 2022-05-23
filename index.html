@@ -6,61 +6,107 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="src/styles.css">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
     <title>Anubhav Jain</title>
 </head>
 
 <body>
-
     <header>
         <nav id="nav-bar">
             <ul id="navbar_ul">
-                <li class="navbar_li">About Me</li>
-                <li class="navbar_li">Skills</li>
-                <li class="navbar_li">Contact Me</li>
-                <li class="navbar_li">My Projects</li>
+                <li class="navbar_li">
+                    <a href='#contact_me'>Get in touch!</a>
+                </li>
+                <li class="navbar_li">
+                    <a href='https://drive.google.com/file/d/1oAMWmC3H_k9DPJ7-oUaLewfxjuWAbOj-/view?usp=sharing' target="_blank" rel="noopener noreferrer">My Resume</a>
+                </li>
+                <li class="navbar_li">
+                    <a href='#projects'>My Projects</a>
+                </li>
+                <li class="navbar_li">
+                    <a href='#more_details'>About Me</a>
+                </li>
             </ul>
         </nav>
     </header>
-    <section class="content">
-        <div id="about_me">
-            <p id="hey">Hey</p>
-            <p id="name">My name is Anubhav Jain</p>
-            <p id="occupation">I am a software engineer with about two years of experience</p>
+    <div id="about_me">
+        <p id="hey">Hey, I'm</p>
+        <p id="name">Anubhav Jain</p>
+        <p id="occupation">I am a software engineer with about two years of experience</p>
+    </div>
+
+    <div id="project_intro">
+        These are some of the projects that I have worked on. Feel free to check them out
+    </div>
+    <div id="projects">
+        <div id='jira_ticket_system' class="project">
+            <h1>JIRA Ticket System</h1>
+            <div class="about_project">
+                <img src="" alt="jira ticket system">
+                <p class="info">
+                    I made this project using ReactJS on the UI side and Java and Oracle on the back-end.
+                </p>
+            </div>
         </div>
-    </section>
-    <div id="skills">
+        <div id='wordle' class="project">
+            <h1>Wordle</h1>
+            <div class="about_project">
+                <img src="" alt="wordle">
+                <p class="info">
+                    I made this project using HTML, CSS and vanillaJS. This project helped me understand how event listeners work and how to handle multiple event listeners at the same time.
+                </p>
+            </div>
+        </div>
+        <div id='e_commerce_website' class="project">
+            <h1>E commerce website</h1>
+            <div class="about_project">
+                <img src="" alt="e commerce website">
+                <p class="info">
+                    Everyone makes a e-commerce website as a part of learning CRUD APIs and I am no different. I made this using HTML, CSS, vanillaJS, Spring Boot and Oracle.
+                </p>
+            </div>
+        </div>
+        <div id='cms_system' class="project">
+            <h1>Basic CMS system</h1>
+            <div class="about_project">
+                <img src="" alt="cms system">
+                <p class="info">
+                    Frankly, this is something I have no idea about. But, since everyone I took inspiration from had this in their portfolio, I hope to start working on this as well.
+                </p>
+            </div>
+        </div>
+        <div id='petrol_burn_calculator' class="project">
+            <h1>Optimized Petrol Burn Finder</h1>
+            <div class="about_project">
+                <img src="" alt="petrol burn calculator">
+                <p class="info">
+                    This is something I started to develop when there was a surge in petrol prices. I thought, what can be done to reduce the petrol consumption by drivers. The simple answewr- use a more optimized route that reduces fuel consumption by evading road blocks.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div id="more_details">
         <p id='backend'>My skills include-Spring Boot, Oracle, Rest APIs on the backend.</p>
         <p id="frontend">On the front end, I am familiar with HTML, CSS, JS, TypeScript and ReactJS.</p>
     </div>
-
-    <div id="projects">
-        These are some of the projects that I have worked on.
-        <ul>
-            <li>JIRA Ticket System</li>
-            <li>Wordle</li>
-            <li>E commerce website</li>
-            <li>Basic CMS system</li>
-            <li>Optimized Petrol Burn Finder</li>
-        </ul>
-    </div>
-
+    <br>
     <div id="contact_me">
         <ul>
-            <li>
+            <li class="contact_me_li">
                 <a href='https://github.com/anubhav823' target="_blank" rel="noopener noreferrer"><img src='src/static/github.png' alt="Github profile" width="30" height="30"></a>
             </li>
-            <li>
+            <li class="contact_me_li">
                 <a href='https://www.linkedin.com/in/anubhav-j/' target="_blank" rel="noopener noreferrer"><img src='src/static/index.png' alt="LinkedIn profile" width="30" height="30"></a>
             </li>
-            <li>
+            <li class="contact_me_li">
                 <a href='https://dev.to/anubhav823' target="_blank" rel="noopener noreferrer"><img src='src/static/dev-badge.svg' alt="DevTo profile" width="30" height="30"></a>
             </li>
-            <li>
+            <li class="contact_me_li">
                 <a href='https://medium.com/@anubhav823' target="_blank" rel="noopener noreferrer"><img src='src/static/monogram.9f1e14b2.png' alt="Medium profile" width="30" height="30"></a>
             </li>
         </ul>
     </div>
-    </section>
+
 </body>
 <script src="script.js"></script>
 
