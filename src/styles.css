@@ -1,7 +1,3 @@
-* {
-    box-sizing: border-box;
-}
-
 html {
     min-height: 100%;
     background-attachment: fixed;
@@ -86,7 +82,7 @@ a {
 }
 
 #hey {
-    font-size: 30px;
+    font-size: 40px;
     font-weight: bolder;
     width: fit-content;
 }
@@ -156,23 +152,28 @@ a {
 }
 
 #contact_me {
-    display: flex;
+    display: table;
     width: 50%;
     position: relative;
     margin: auto;
-    top: 50px;
+    align-items: center;
+    top: 300px;
+    background-color: rgb(255, 153, 0);
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 30px 15px rgba(219, 4, 4, 0.24);
+    text-align: center;
 }
 
 .contact_me_li {
-    display: inline;
+    text-align: center;
+    display: inline-block;
     padding: 16px 14px;
-    transition: transform .5s;
 }
 
 .contact_me_li img {
-    display: inline;
-    padding: 16px 14px;
-    transition: transform .5s;
+    /* display: inline-block; */
+    transition: transform .3s;
 }
 
 .contact_me_li img:hover {
@@ -188,11 +189,12 @@ figcaption {
     text-align: center;
 }
 
-footer {
-    top: 50px;
+.footer {
+    position: relative;
+    top: 350px;
     display: flex;
     justify-content: center;
     background-color: #220b0b;
     padding: 20px;
-    box-shadow: -3px -1px 5px 1px rgba(153, 153, 155, .342);
+    margin: auto;
 }
