@@ -15,15 +15,6 @@ body {
     height: 100vh;
 }
 
-
-/* 
-#nav-bar {
-    position: fixed;
-    top: 0;
-    align-items: flex-end;
-    overflow: hidden;
-} */
-
 a {
     text-decoration: none;
     color: white;
@@ -34,19 +25,19 @@ ul {
     margin: 10px;
 }
 
+.info {
+    background-color: rgb(255, 94, 0);
+    border-radius: 5px;
+    padding: 10px;
+}
+
 a {
     transition: transform .3s;
     padding: 0px 5px;
 }
 
-a:hover {
-    transform: scale(1.1);
-}
-
-#container {
-    display: flex;
-    justify-content: center;
-    height: 100%;
+.project_links:hover {
+    color: brown;
 }
 
 #about_me {
@@ -54,6 +45,10 @@ a:hover {
     position: relative;
     margin: auto;
     top: 100px;
+}
+
+#container {
+    height: 100%;
 }
 
 .navbar_li {
@@ -97,17 +92,21 @@ a:hover {
 }
 
 #name {
-    font-size: 50px;
+    font-size: 75px;
     font-weight: bold;
-    width: fit-content;
-    text-shadow: 3px 3px rgba(255, 0, 0, 0.774);
+    text-shadow: 5px 3px rgba(255, 0, 0, 0.774);
+    display: flex;
+    flex-flow: column wrap;
+    text-align: left;
+    width: 50vw;
+    margin: 0 auto;
 }
 
 .about_me {
     font-size: 40px;
     font-weight: bold;
-    width: fit-content;
-    text-shadow: 3px 3px rgba(255, 0, 0, 0.774);
+    width: 50%;
+    margin: auto;
 }
 
 #occupation {
@@ -118,6 +117,11 @@ a:hover {
 
 .bar {
     color: rgb(106, 87, 107);
+}
+
+#details {
+    position: relative;
+    top: 100px;
 }
 
 #more_details {
@@ -140,10 +144,15 @@ a:hover {
     margin: auto;
     position: relative;
     top: 100px;
+    transition: transform 0.3s;
 }
 
 .about_project {
     display: flex;
+}
+
+.project:hover {
+    transform: scale(1.05);
 }
 
 #contact_me {
@@ -177,4 +186,13 @@ a:hover {
 
 figcaption {
     text-align: center;
+}
+
+footer {
+    top: 50px;
+    display: flex;
+    justify-content: center;
+    background-color: #220b0b;
+    padding: 20px;
+    box-shadow: -3px -1px 5px 1px rgba(153, 153, 155, .342);
 }
