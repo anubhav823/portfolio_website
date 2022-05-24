@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 html {
     min-height: 100%;
     background-attachment: fixed;
@@ -11,10 +15,14 @@ body {
     height: 100vh;
 }
 
-#root {
-    align-items: center;
-    margin: auto;
-}
+
+/* 
+#nav-bar {
+    position: fixed;
+    top: 0;
+    align-items: flex-end;
+    overflow: hidden;
+} */
 
 a {
     text-decoration: none;
@@ -27,7 +35,18 @@ ul {
 }
 
 a {
-    transition: transform .5s;
+    transition: transform .3s;
+    padding: 0px 5px;
+}
+
+a:hover {
+    transform: scale(1.1);
+}
+
+#container {
+    display: flex;
+    justify-content: center;
+    height: 100%;
 }
 
 #about_me {
@@ -61,7 +80,9 @@ a {
 }
 
 #projects {
-    margin: 20px;
+    display: grid;
+    grid-template-columns: auto;
+    grid-gap: 50px;
 }
 
 .content {
@@ -82,10 +103,21 @@ a {
     text-shadow: 3px 3px rgba(255, 0, 0, 0.774);
 }
 
+.about_me {
+    font-size: 40px;
+    font-weight: bold;
+    width: fit-content;
+    text-shadow: 3px 3px rgba(255, 0, 0, 0.774);
+}
+
 #occupation {
     font-size: 30px;
     font-weight: bold;
     width: fit-content;
+}
+
+.bar {
+    color: rgb(106, 87, 107);
 }
 
 #more_details {
@@ -93,7 +125,7 @@ a {
     width: 50%;
     padding: 20px;
     border-radius: 5px;
-    box-shadow: 30px 15px rgba(219, 4, 4, 0.4);
+    box-shadow: 30px 15px rgba(219, 4, 4, 0.24);
     margin: auto;
     position: relative;
     top: 100px;
@@ -104,11 +136,10 @@ a {
     width: 50%;
     padding: 20px;
     border-radius: 5px;
-    box-shadow: 30px 15px rgba(219, 4, 4, 0.4);
+    box-shadow: 30px 15px rgba(219, 4, 4, 0.24);
     margin: auto;
     position: relative;
     top: 100px;
-    display: block;
 }
 
 .about_project {
@@ -116,6 +147,7 @@ a {
 }
 
 #contact_me {
+    display: flex;
     width: 50%;
     position: relative;
     margin: auto;
@@ -136,4 +168,13 @@ a {
 
 .contact_me_li img:hover {
     transform: scale(1.2);
+}
+
+#img_technologies {
+    display: flex;
+    justify-content: center;
+}
+
+figcaption {
+    text-align: center;
 }
