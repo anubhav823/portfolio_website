@@ -182,7 +182,6 @@ a {
 }
 
 .contact_me_li img {
-    /* display: inline-block; */
     transition: transform .3s;
 }
 
@@ -197,6 +196,12 @@ a {
 
 figcaption {
     text-align: center;
+}
+
+.image {
+    padding: 5px;
+    border: 1px solid grey;
+    border-radius: 5px;
 }
 
 .footer {
