@@ -47,6 +47,14 @@ a {
     height: 100%;
 }
 
+#nav-bar {
+    position: fixed;
+    top: 0;
+    background-color: #220b0b;
+    z-index: 100;
+    width: 100%;
+}
+
 .navbar_li {
     display: inline;
     padding: 16px 14px;
@@ -63,7 +71,7 @@ a {
 
 #project_intro {
     position: relative;
-    top: 100px;
+    top: 350px;
     width: 50%;
     margin: auto;
     font-size: 25px;
@@ -71,6 +79,8 @@ a {
 }
 
 #projects {
+    position: relative;
+    top: 270px;
     display: grid;
     grid-template-columns: auto;
     grid-gap: 50px;
